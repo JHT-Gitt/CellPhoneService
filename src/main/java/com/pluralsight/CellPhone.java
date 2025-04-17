@@ -6,21 +6,21 @@ public class CellPhone {
     private String model, carrier, phoneNumber, owner;
 
 
-//    public CellPhone( int serialNumber, String model, String carrier , String phoneNumber, String owner) {
-//        this.serialNumber = 0;
-//        this.model = "";
-//        this.carrier = "";
-//        this.phoneNumber = "";
-//        this.owner = "";
-//    }
-
-    public CellPhone() {
+    public CellPhone( int serialNumber, String model, String carrier , String phoneNumber, String owner) {
         this.serialNumber = 0;
         this.model = "";
         this.carrier = "";
         this.phoneNumber = "";
         this.owner = "";
     }
+
+//    public CellPhone() {
+//        this.serialNumber = 0;
+//        this.model = "xyz";
+//        this.carrier = "verizon";
+//        this.phoneNumber = "000-000-0007";
+//        this.owner = "J";
+//    }
 
     public int getSerialNumber() {
         return serialNumber;
@@ -60,6 +60,9 @@ public class CellPhone {
 
     public void setOwner(String owner) {
         this.owner = owner;
+    }
+    public void dial(String _phoneNumber){
+        System.out.println(this.owner + "'s phone is calling " + _phoneNumber);
     }
 
 
