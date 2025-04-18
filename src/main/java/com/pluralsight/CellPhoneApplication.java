@@ -53,6 +53,19 @@ public class CellPhoneApplication {
         cell1.dial(cell2.getPhoneNumber());
         cell2.dial(cell1.getPhoneNumber());
 
+
+        CellPhone cell3 = new CellPhone();
+        cell3.setSerialNumber(333);
+        cell3.setModel("DDD");
+        cell3.setCarrier("AT&T");
+        cell3.setPhoneNumber("333-333-3333");
+        cell3.setOwner("Cath");
+
+       // display(cell3);
+
+        cell3.dial(cell1.getPhoneNumber());
+        cell3.dial(cell3);
+
     }
     public static void display(CellPhone phone) {
 
